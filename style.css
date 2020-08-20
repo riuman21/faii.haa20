@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFEFEF;
+    animation : fadeIn ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero {
+    height: 100vh;
+}
+
+.text {
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    color: #76ABA9;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+.line {
+    position: absolute;
+    top: 77px;
+    left: 20px;
+    width: 5px;
+    height: 150px;
+    background-color: #76ABA9;
+    border-radius: 100px;
+}
+
+.picture {
+    margin: 0 auto;
+    margin-left: 105px;
+    margin-top: 140px;
+    width: 240px;
+    position: relative;
+}
+
+.picture img{
+    width: 240px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.circle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #F7AEC5;
+    border-radius: 50%;
+    top: -25px;
+    right: -25px;
+}
+
+.box {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background-color: #F7AEC5;
+    bottom: -60px;
+    left: -50px;
+    z-index: -1;
+}
+
+.happy {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #76ABA9;
+    margin-top: 130px;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    line-height: 65px;
+}
+
+.happy span {
+    border: none;
+    padding: 5px 10px;
+    background-color: #F4E7B9;
+    color: #F7AEC5;
+    border-radius: 10px;
+}
+
+.testimonial {
+    padding: 10px;
+    background-color: #C7E8E8;
+}
+
+.testimonial h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: overline;
+    text-decoration-color: #76ABA9;
+    color: #F7AEC5;
+    padding: 20px;
+    font-size:2rem;
+}
+
+.test-box {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+    color: #88BCB7;
+    border-radius: 10px;
+    border: none;
+    margin: 50px 30px;
+    padding: 25px;
+    position: relative;
+    -webkit-box-shadow: -1px 0px 23px -11px rgba(153,153,153,1);
+    -moz-box-shadow: -1px 0px 23px -11px rgba(153,153,153,1);
+    box-shadow: -1px 0px 23px -11px rgba(153,153,153,1);
+}
+
+.test-box p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.test-box h {
+    font-size: 1.2rem;
+    color: #F7AEC5;
+}
+
+#quote {
+    position: absolute;
+    left: -10px;
+    top: -15px;
+    font-size: 2.5rem;
+    color: #F7AEC5;
+}
+
+.container {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    color: #88BCB7;;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container h2 {
+    border: none;
+    border-radius: 10px;
+    font-family: 'Playball', cursive;
+    font-size: 2.5rem;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding: 15px 15px;
+    margin: 15px 5px;
+    color: #F7AEC5;
+    background-color: #F4E7B9;
+}
+
+.container p {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #88BCB7;
+}
+
+
+@media only screen and (max-width : 380px) {
+    .text {
+        letter-spacing: 0;
+        font-size: .9rem;
+    }
+    .picture {
+        margin-top: 140px;
+        margin-left: 90px;
+    }
+    .container h1 {
+        font-size: 1.1rem;
+    }
+
+    .container h2 {
+        font-size: 2rem;
+    }
+
+    .container p {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media only screen and (min-width : 650px) {
+    body {
+        display: none;
+    }
+}
